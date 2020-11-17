@@ -1,15 +1,17 @@
 import logo from './logo.svg';
-import {Navbar} from 'reactstrap';
+import {Navbar,NavbarBrand} from 'reactstrap';
+import Menu from './components/MenuComponents'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div >
         <Navbar dark color = "primary">
         <div className = "container">
-        <Navbar href = "/"> Restaurant Confusion</Navbar>
+        <NavbarBrand href = "/"> Restaurant Confusion</NavbarBrand>
         </div>
         </Navbar>
+        <Menu />
     </div>
   );
 }
