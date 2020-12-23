@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle } from 'reactstrap';
 import Dish from './DishComponents'
+import Comment from './CommentComponents'
 
 class Menu extends Component {
 
@@ -40,6 +41,10 @@ class Menu extends Component {
                 <div className="row">
                   <div  className="col-12 col-md-5 m-1">
                       <Dish selectedDish = {this.state.selectedDish}/>
+                      
+                  </div>
+                  <div className="col-12 col-md-5 m-1">
+                  <Comment selectedDish = {this.state.selectedDish}/>
                   </div>
                 </div>
             </div>
