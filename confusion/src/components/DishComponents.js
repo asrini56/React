@@ -1,13 +1,8 @@
 import React, {Component} from 'react';
-import {Media} from 'reactstrap';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+import { Card, CardImg, CardText, CardBody,
     CardTitle } from 'reactstrap';
 
 class Dish extends Component{
-    constructor(props) {
-        super(props);
-    }
-
     render(){
         const dish = this.props.selectedDish;
         if (dish != null)
